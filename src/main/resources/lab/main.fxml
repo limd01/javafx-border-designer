@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="467.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab.Controller">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="129.99998982747397" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="89.6666259765625" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.3333740234375" minWidth="10.0" prefWidth="131.66666666666663" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="149.66666666666663" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="103.66666666666663" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label prefHeight="17.0" prefWidth="145.0" text="Background Colors" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label prefHeight="17.0" prefWidth="145.0" text="Locations" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="northLbl" prefHeight="17.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="eastLbl" prefHeight="17.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="westLbl" prefHeight="17.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <RadioButton fx:id="springGreenRdo" mnemonicParsing="false" onAction="#colorChange" text="Spring Green" textFill="#acd389" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+<RadioButton fx:id="orangeRdo" mnemonicParsing="false" onAction="#colorChange" text="Orange" textFill="#daa959" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+<RadioButton fx:id="salmonRdo" mnemonicParsing="false" onAction="#colorChange" text="Salmon" textFill="#d386a9" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+<RadioButton fx:id="cyanRdo" mnemonicParsing="false" onAction="#colorChange" text="Cyan" textFill="#64aad0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+<TextField fx:id="textField" onAction="#diverge" prefHeight="25.0" prefWidth="124.0" promptText="enter 4 words" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+<Button fx:id="diverge" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#diverge" text="Diverge" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+<CheckBox fx:id="eastChk" mnemonicParsing="false" onAction="#colorChange" text="East" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+<CheckBox fx:id="northChk" mnemonicParsing="false" onAction="#colorChange" text="North" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+<CheckBox fx:id="westChk" mnemonicParsing="false" onAction="#colorChange" text="West" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label fx:id="northLbl" alignment="CENTER" prefHeight="93.0" prefWidth="600.0" GridPane.columnSpan="2147483647" />
+      <Label fx:id="eastLbl" alignment="CENTER" prefHeight="473.0" prefWidth="103.0" GridPane.columnIndex="4" GridPane.rowSpan="2147483647" />
+      <Label fx:id="southLbl" alignment="CENTER" prefHeight="53.0" prefWidth="604.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="7" />
+      <Label fx:id="westLbl" alignment="CENTER" prefHeight="499.0" prefWidth="128.0" GridPane.rowSpan="2147483647" />
+      <CheckBox fx:id="southChk" mnemonicParsing="false" onAction="#colorChange" text="South" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+   </children>
+</GridPane>
